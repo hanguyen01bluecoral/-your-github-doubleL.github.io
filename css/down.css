@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+.inner {
+  position: relative;
+}
+
+.inner {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .inner {
+    max-width: 1210px;
+  }
+}
+@media (min-width: 768px) {
+  .inner.w-article {
+    max-width: 1010px;
+  }
+}
+
+[data-dropdown-content] {
+  display: none;
+}
+[data-dropdown-content].on {
+  display: block;
+}
+
+[data-dropdown].w-pccc {
+  background-color: #F2F2F2;
+  transition: background-color 0.25s, color 0.2s;
+}
+[data-dropdown].w-pccc.on {
+  background-color: #B3172F;
+}
+[data-dropdown].w-pccc.on [data-dropdown-element] {
+  color: white;
+}
+[data-dropdown].w-pccc.on [data-dropdown-element] [class^=icon] {
+  transform: rotate(-180deg);
+}
+[data-dropdown].w-pccc.on + .img .overlay {
+  opacity: 1;
+}
+[data-dropdown].w-pccc [data-dropdown-element] {
+  transition: color 0.2s;
+}
+[data-dropdown].w-pccc [data-dropdown-element] [class^=icon] {
+  transition: transform 0.3s;
+}
+[data-dropdown].w-pccc [data-dropdown-content] {
+  color: white;
+}
+[data-dropdown].w-project.on [data-dropdown-element] {
+  color: #B3172F;
+}
+[data-dropdown].w-project [data-dropdown-element] {
+  transition: color 0.2s;
+}
+@media (max-width: 767px) {
+  [data-dropdown].w-project [data-dropdown-content] {
+    display: block !important;
+  }
+}
+[data-dropdown].w-footer.on [data-dropdown-element] [class^=icon] {
+  transform: rotate(-90deg);
+}
+[data-dropdown].w-footer [data-dropdown-element] [class^=icon] {
+  transition: transform 0.3s;
+}
+[data-dropdown].w-our-advantages.on [data-dropdown-element] [class^=icon] {
+  transform: rotate(-90deg);
+}
+[data-dropdown].w-our-advantages [data-dropdown-element] [class^=icon] {
+  transition: transform 0.3s;
+}
+[data-dropdown].w-faqs.on [data-dropdown-element] {
+  color: #B3172F;
+}
+[data-dropdown].w-faqs.on [data-dropdown-element] [class^=icon] {
+  transform: rotate(-180deg);
+}
+[data-dropdown].w-faqs [data-dropdown-element] [class^=icon] {
+  transition: transform 0.3s;
+}
+
+@tailwind utilities;
+
+/*# sourceMappingURL=down.css.map */

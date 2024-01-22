@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "sass": "^1.64.1"
+  },
+  "dependencies": {
+    "swiper": "^11.2.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "main": "index.html",
+  "name": "swiper-thumbs-gallery-loop",
+  "name": "swiper-slides-per-view",
+ 
+  "scripts": {
+    "build": "echo This is a static template, there is no bundler or bundling involved!",
+    "start": "serve"
+  },
+  "tags": [
+    "swiper"
+  ]
+}
